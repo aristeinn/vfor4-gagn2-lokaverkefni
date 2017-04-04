@@ -1,6 +1,6 @@
 <?php require 'partials/head.view.php'; ?>
 
-<h1>Add movies</h1>
+<h1>Add movie</h1>
 
 <form action="/movie-post" method="POST">
 		<input type="text" name="name" placeholder="Nafn">

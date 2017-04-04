@@ -4,7 +4,6 @@
 
 $pdo = Connection::make();
 
-
 $insertStatement = $pdo->prepare("INSERT INTO movies(name, rating, lang) VALUES (:name, :rating, :lang)");
 
 //$statement->bindParam(':id', $_POST['id']);

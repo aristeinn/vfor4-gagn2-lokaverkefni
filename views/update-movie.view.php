@@ -13,7 +13,14 @@
 		<input type="text" name="name" placeholder="Nafn">
 		<input type="text" name="rating" placeholder="Einkunn">
 		<input type="text" name="lang" placeholder="Tungumál">
-		<button type="submit">Uppfæra mynd</button>
+		<button type="submit">Update</button>
 	</form>
+
+
+	<?php foreach($movies as $movie): ?>
+		<li>
+			<?= $movie->name; ?>
+		</li>
+	<?php endforeach; ?>
 
 <?php require 'partials/footer.view.php'; ?>

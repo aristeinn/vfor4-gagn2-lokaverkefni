@@ -7,6 +7,7 @@
       <li><a href="/">Home</a></li>
       <li><a href="/addmovie">Add movie</a></li>
       <li><a href="/updatemovie">Update movie</a></li>
+      <li><a href="/deletemovie">Delete movie</a></li>
     </ul>
   </div>
 </nav>

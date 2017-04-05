@@ -1,0 +1,19 @@
+create table users
+(
+    id int not null AUTO_INCREMENT,
+    name varchar(35),
+    username varchar(255),
+    password varchar(255),
+    PRIMARY KEY(id),
+    UNIQUE(username)
+)
+
+
+create table movies
+(
+	id int not null AUTO_INCREMENT,
+	name varchar(30),
+	rating int,
+	lang varchar(20),
+	PRIMARY KEY(id)
+)

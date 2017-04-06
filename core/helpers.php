@@ -9,6 +9,8 @@ function dd($data)
 
 function redirect($path)
 {
+	$path = trim($path, '/');
+
 	header("Location: /{$path}");
 }
 

@@ -11,11 +11,7 @@
 			<button type="submit">Add</button>
 	</form>
 
-	<?php foreach($movies as $movie): ?>
-			<li>
-				<?= $movie->name; ?>
-			</li>
-	<?php endforeach; ?>
+	<?php require 'partials/movieTable.view.php'; ?>
 </div>
 
 <?php require 'partials/footer.view.php'; ?>

@@ -10,7 +10,7 @@
 			<button type="submit">Nýskrá</button>
 	</form>
 	<br>
-	<a href="views/login.view.php">Innskráning</a>
+	<a href="/login">Innskráning</a>
 </div>
 
 

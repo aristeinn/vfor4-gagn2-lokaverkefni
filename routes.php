@@ -9,7 +9,7 @@ $router->get('/updatemovie', 'controllers/update-movie.php');
 $router->get('/deletemovie', 'controllers/delete-movie.php');
 
 $router->post('/register', 'controllers/register-post.php');
-$router->post('/login', 'controllers/login-post.php');
+$router->post('/login-post', 'controllers/login-post.php');
 $router->post('/movie-post', 'controllers/movie-post.php');
 $router->post('/movie-update', 'controllers/movie-update.php');
 $router->post('/movie-delete', 'controllers/movie-delete.php');

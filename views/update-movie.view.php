@@ -20,11 +20,7 @@
 		</form>
 
 
-		<?php foreach($movies as $movie): ?>
-			<li>
-				<?= $movie->name; ?>
-			</li>
-		<?php endforeach; ?>
+		<?php require 'partials/movieTable.view.php'; ?>
 
 </div>
 

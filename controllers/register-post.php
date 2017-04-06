@@ -15,4 +15,4 @@ $insertStatement->bindParam(':password', $hash_password);
 
 $insertStatement->execute();
 
-redirect('/login');
+redirect('login');

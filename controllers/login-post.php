@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+//session_start();
 
 $pdo = Connection::make();
 
@@ -26,8 +26,10 @@ if(isset($_POST["username"], $_POST["password"]))
  
 	if($verify == TRUE)
 	{
-		$_SESSION["logged_in"] = true;
-		$_SESSION["name"] = $username;
+		//$_SESSION["logged_in"] = true;
+		Session::write("logged_in",true);
+		//$_SESSION["name"] = $username;
+		Session::write("name", $username);
 		redirect('/homepage');
 	}
 	else

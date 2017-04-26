@@ -1,6 +1,7 @@
 <?php
 
-session_start();
+//session_start();
+Session::write('title', $title);
 
 ?>
 <?php require 'partials/head.view.php'; ?>

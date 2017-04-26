@@ -13,6 +13,4 @@ $insertStatement->bindParam(':lang', $_POST['lang']);
 
 $insertStatement->execute();
 
-//header('Location: /Projects/lokaverkefni/index.php');
-
 redirect('homepage');

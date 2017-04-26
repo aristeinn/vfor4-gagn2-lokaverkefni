@@ -1,9 +1,6 @@
 <?php
-session_start();
 
-session_unset();
-
-session_destroy(); 
+Session::delete('title');
 
 redirect('/register');
  ?>

@@ -21,21 +21,17 @@ if(isset($_POST["username"], $_POST["password"]))
 
 	$verify = password_verify($password, $hash_password);
 
-	//$rows=$result1->rowCount();
-
  
 	if($verify == TRUE)
 	{
-		//$_SESSION["logged_in"] = true;
 		Session::write("logged_in",true);
-		//$_SESSION["name"] = $username;
 		Session::write("name", $username);
 		redirect('/homepage');
 	}
 	else
 	{
-		redirect('/register');
-		//$message = "wrong answer";
-		//echo "<script type='text/javascript'>alert('$message');</script>";
+		redirect('/login');
+		$message = "Login failed";
+		echo "<script type='text/javascript'>alert('$message');</script>";
 	}
 }

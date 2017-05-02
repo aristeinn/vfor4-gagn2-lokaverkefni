@@ -31,7 +31,5 @@ if(isset($_POST["username"], $_POST["password"]))
 	else
 	{
 		redirect('/login');
-		$message = "Login failed";
-		echo "<script type='text/javascript'>alert('$message');</script>";
 	}
 }

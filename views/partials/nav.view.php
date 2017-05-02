@@ -1,3 +1,4 @@
+<?php $username = Session::read("name"); ?>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -10,6 +11,7 @@
       <li><a href="/deletemovie">Delete movie</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
+      <li><a href=""><?= $username; ?></a></li>
       <li><a href="/">Logout</a></li>
     </ul>
   </div>

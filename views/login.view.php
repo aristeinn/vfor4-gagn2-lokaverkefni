@@ -5,9 +5,9 @@
 	<h1>Innskráning</h1>
 	<form method="POST" action="/login-post">
 		<br>
-		<div style="font-weight: bold; color:white;">Notendanafn</div>
+		<label style="font-weight: bold; color:white;">Notandanafn</label>
 		<input type="text" name="username" placeholder="Nafn"><br><br>
-		<div style="font-weight: bold; color:white;">Lykilorð</div>
+		<label style="font-weight: bold; color:white;">Lykilorð</label>
 		<input type="password" name="password" placeholder="Lykilorð"><br><br>
 		<button class="btn btn-primary btn-block btn-large" type="submit">Innskrá</button>
 		<br>

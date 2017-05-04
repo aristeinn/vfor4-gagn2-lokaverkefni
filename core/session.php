@@ -33,6 +33,23 @@ class Session
     // self::_init();
     unset($_SESSION[$key]);
   }
+
+  public static function get($key)
+  {
+    if( !is_string($key) )
+    {
+      throw new Exception("session key must be a string");
+    }
+
+    if (isset($_SESSION[$key])) 
+    {
+      return $_SESSION[$key];
+    }
+    else
+    {
+      return false;
+    }
+  }
   
   public static function start()
   {

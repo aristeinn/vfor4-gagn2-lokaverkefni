@@ -17,3 +17,15 @@ create table movies
 	lang varchar(20),
 	PRIMARY KEY(id)
 )
+
+
+CREATE TABLE karfa
+(
+    id int not null AUTO_INCREMENT,
+    users_id int,
+    movies_id int,
+    PRIMARY KEY(id),
+    FOREIGN KEY(users_id) REFERENCES users(id),
+    FOREIGN KEY(movies_id) REFERENCES movies(id)
+    
+)

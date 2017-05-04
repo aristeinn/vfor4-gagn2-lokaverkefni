@@ -1,19 +1,13 @@
 <?php
 
-//session_start();
 Session::write('title', $title);
-
 
 ?>
 <?php require 'partials/head.view.php'; ?>
 <?php require 'views/partials/nav.view.php'; ?>
-<?php $username = Session::read("name"); ?>
+
 <div class="container">
 <div class="logged_in">
-
-	<!--<h1>Homepage</h1>-->
-	<h1>Hello <?= $username; ?>, rent the movies you like!</h1>
-
 	<table class="table table">
 	<thead>
 		<tr>
@@ -22,7 +16,7 @@ Session::write('title', $title);
 			<th>Language</th>
 		</tr>
 	</thead>
-	<?php foreach($movies as $movie): ?>
+	<?php foreach($karfa as $movie): ?>
 	<tbody>
 		<tr>
 			<td>
@@ -35,9 +29,9 @@ Session::write('title', $title);
 				<?= $movie->lang; ?>
 			</td>
 			<td>
-			<form method="POST" action="/karfa-post">
+				<form method="POST" action="/karfa-delete">
 				<input type="hidden" name="id" value="<?= $movie->id; ?>">
-				<button type="submit" class="btn btn-primary">Rent</button>
+				<button type="submit" class="btn btn-primary">Delete</button>
 			</form>
 			</td>
 		</tr>

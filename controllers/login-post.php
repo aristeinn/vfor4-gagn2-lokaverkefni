@@ -11,7 +11,7 @@ if(isset($_POST["username"], $_POST["password"]))
 	$password = $_POST["password"];
 
 
-	$result1 = $pdo->prepare("SELECT username, password FROM users WHERE username= '".$username."'");
+	$result1 = $pdo->prepare("SELECT id, username, password FROM users WHERE username= '".$username."'");
 
 	$result1->execute();
 
@@ -26,6 +26,7 @@ if(isset($_POST["username"], $_POST["password"]))
 	{
 		Session::write("logged_in",true);
 		Session::write("name", $username);
+		Session::write("id", $row->id);
 		redirect('/homepage');
 	}
 	else

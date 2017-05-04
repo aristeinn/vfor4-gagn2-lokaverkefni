@@ -11,7 +11,7 @@
       <li><a href="/deletemovie">Delete movie</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="/karfa">Karfa</a></li>
+      <li><a href="/karfa">Cart</a></li>
       <li><a href=""><?= $username; ?></a></li>
       <li><a href="/">Logout</a></li>
     </ul>

@@ -8,9 +8,9 @@ create table users
     UNIQUE(username)
 )
 
-
 create table movies
 (
+<<<<<<< HEAD
 	id int not null AUTO_INCREMENT,
 	name varchar(30),
 	rating int,
@@ -28,4 +28,11 @@ CREATE TABLE karfa
     FOREIGN KEY(users_id) REFERENCES users(id),
     FOREIGN KEY(movies_id) REFERENCES movies(id)
     
+=======
+    id int not null AUTO_INCREMENT,
+    name varchar(30),
+    rating int,
+    lang varchar(20),
+    PRIMARY KEY(id)
+>>>>>>> 3fc9fab1646165a443f756628306cd3eebaf1230
 )

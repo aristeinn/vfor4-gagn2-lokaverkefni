@@ -8,7 +8,7 @@
 
 	<form  action="/movie-update" method="POST">
 		<div class="row">
-		<div class="col-md-2">
+		<div class="col-md-3">
 			<select name="old" class="form-control">
 					<?php foreach($movies as $movie): ?>
 						<li>
